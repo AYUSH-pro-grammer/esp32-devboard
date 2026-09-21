@@ -1,16 +1,19 @@
-# ESP32-S3 Development Board
+# ESP32-S2 Development Board
 
-Custom designed development board made using an Espressif ESP32-S3-WROOM-1 module. This board provides USB-C connectivity to the computer, breakout headers for prototyping, and tactile switches. This board was designed and created for the sole purpose of learning the process used to design a Printed Circuit Board (PCB)
+Development board built using Espressif ESP32-S2FH4 with USB-C, two WS2812B LEDs, 3.3V LDO and GPIO headers, which have 15 pins on both sides.
 
-## Why this project
-This project was created as a means to learn how to design hardware PCBs. Instead of using a pre-existing dev board, creating my own board allowed me to understand how microcontroller boards are routed for power (LDO regulators), and how USB and GPIO signals are routed for custom PCBs.
+## Reasons for creating this project
 
-### How does it work
-1. The board uses a USB-C to provide 5V to the system. A 5V to 3.3V LDO regulator (LD1117S33TR) is used to ensure a stable voltage is applied to the ESP32 and the board's logic.
-2. The ESP32-S3-WROOM-1 is used to provide the main processing functions, such as Wi-Fi and Bluetooth communication protocols.
-3. The board also breaks out all available GPIO pins to two 1x20 pin headers for prototyping and breadboarding purposes. The two tactile switches are connected to separate GPIO pins so that they can be used as momentary push-buttons.
+I created this board because I want to get experience in designing a PCB and build my own ESP32 board. I was interested in building the schematic, routing the PCB and putting everything together.
 
-### 3D Renders
+### How it works
+
+The board receives 5V from USB-C port and uses 3.3V LDO to power the ESP32-S2 module.
+The ESP32-S2 is the core part of the board and can be programmed through USB-C.
+GPIO pins are routed to two 1x15 headers to use them with jumper wires and breadboard.
+WS2812B LEDs and a button were used to add some functionality to the board.
+
+### 3D Model
 ![PCB Front](image/pcb_front.png)
 ![PCB Back](image/pcb_back.png)
 
@@ -20,32 +23,44 @@ This project was created as a means to learn how to design hardware PCBs. Instea
 
 
 
-#### Components Summary
-Component Totals
 
-**Physical Components** 19
-**Resistors** 6
-**Capacitors** 3
-**LEDs** 3
-**20-Pin Headers** 2
-**Push-Buttons** 2
-**USB-C** 1
-**Voltage Regulator** 1
-**ESP32-S3** 1
+## BOM Summary
 
-#### Bill of Materials (BOM)
+| Qty | Component                  | Selected Part                             | Supplier                  | Link                                                            | MOQ | Unit Price (USD) | Order Cost (USD) |
+| --: | -------------------------- | ----------------------------------------- | ------------------------- | --------------------------------------------------------------- | --: | ---------------: | ---------------: |
+|   1 | 25 MHz Crystal, 20 pF      | SJK 7F25000E20UCG                         | SJK                       | [C252274](https://www.lcsc.com/product-detail/C252274.html)     |   5 |          $0.1139 |            $0.57 |
+|   2 | 33 pF Capacitor            | FOJAN FCC0402N330J500AT                   | FOJAN                     | [C5137486](https://www.lcsc.com/product-detail/C5137486.html)   | 100 |          $0.0030 |            $0.30 |
+|   1 | 100 nF Capacitor           | Samsung Electro-Mechanics CL05B104KO5NNNC | Samsung Electro-Mechanics | [C1525](https://www.lcsc.com/product-detail/C1525.html)         | 100 |          $0.0046 |            $0.46 |
+|   7 | 1 µF Capacitor             | Samsung Electro-Mechanics CL05A105KA5NQNC | Samsung Electro-Mechanics | [C52923](https://www.lcsc.com/product-detail/C52923.html)       |  50 |          $0.0100 |            $0.50 |
+|   2 | 4.7 µF Capacitor           | Samsung Electro-Mechanics CL05A475MP5NRNC | Samsung Electro-Mechanics | [C23733](https://www.lcsc.com/product-detail/C23733.html)       |  50 |          $0.0167 |            $0.84 |
+|   2 | WS2812B-2020 LED           | XINGLIGHT XL-2020RGBC-2812B               | XINGLIGHT                 | [C5349955](https://www.lcsc.com/product-detail/C5349955.html)   |   5 |          $0.1112 |            $0.56 |
+|   1 | 1 A / 12 V Resettable Fuse | R+O SMD0805-100-12                        | R+O                       | [C46640991](https://www.lcsc.com/product-detail/C46640991.html) |  10 |          $0.0435 |            $0.44 |
+|   1 | USB-C Receptacle           | SHOU HAN TYPE-C16PIN                      | SHOU HAN                  | [C393939](https://www.lcsc.com/product-detail/C393939.html)     |  10 |          $0.0592 |            $0.59 |
+|   5 | 5.1 kΩ Resistor            | UNI-ROYAL 0402WGF5101TCE                  | UNI-ROYAL                 | [C25905](https://www.lcsc.com/product-detail/C25905.html)       | 100 |          $0.0023 |            $0.23 |
+|   3 | 10 kΩ Resistor             | UNI-ROYAL 0402WGF1002TCE                  | UNI-ROYAL                 | [C25744](https://www.lcsc.com/product-detail/C25744.html)       | 100 |          $0.0034 |            $0.34 |
+|   1 | Tactile Push Button        | XUNPU TS-1088-AR02016                     | XUNPU                     | [C720477](https://www.lcsc.com/product-detail/C720477.html)     |  10 |          $0.0516 |            $0.52 |
+|   1 | ESP32-S2FH4                | ESPRESSIF ESP32-S2FH4                     | ESPRESSIF                 | [C2840995](https://www.lcsc.com/product-detail/C2840995.html)   |   1 |          $2.4574 |            $2.46 |
+|   1 | 3.3 V LDO                  | TOREX XC6206P332MR-G                      | TOREX                     | [C5446](https://www.lcsc.com/product-detail/C5446.html)         |   5 |          $0.1437 |            $0.72 |
 
-## Bill of Materials (BOM)
+## Total
 
-| Reference | Qty | Value | Footprint / Description | Supplier Link |
-| :--- | :---: | :--- | :--- | :--- |
-| **C1, C5** | 2 | 10uF | Capacitor_SMD:C_1206_3216Metric | [LCSC C13585](https://www.lcsc.com/product-detail/C13585.html) |
-| **C4** | 1 | 100nF | Capacitor_SMD:C_1206_3216Metric | [LCSC C1748](https://www.lcsc.com/product-detail/C1748.html) |
-| **D1, D2, D3** | 3 | LED | LED_THT:LED_D3.0mm | [LCSC C72041](https://www.lcsc.com/product-detail/C72041.html) |
-| **J1, J2** | 2 | Conn_01x20 | Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical | [LCSC C2337](https://www.lcsc.com/product-detail/C2337.html) |
-| **J3** | 1 | USB_C_Receptacle_USB2.0_16P | Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal | [LCSC C2765186](https://www.lcsc.com/product-detail/C2765186.html) |
-| **R1, R2, R4, R5, R6**| 5 | 5.1k | Resistor_SMD:R_1206_3216Metric | [LCSC C17936](https://www.lcsc.com/product-detail/C17936.html) |
-| **R3** | 1 | 51.k | Resistor_SMD:R_1206_3216Metric | [LCSC C17942](https://www.lcsc.com/product-detail/C17942.html) |
-| **SW1, SW2** | 2 | SW_Push | Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB | [StacksKB Link](https://stackskb.com/store/cherry-mx-clear-switch-5-pin-pack-of-10/) |
-| **U1** | 1 | ESP32-S3-WROOM-1 | RF_Module:ESP32-S3-WROOM-1 | [LCSC C2913202](https://www.lcsc.com/product-detail/C2913202.html) |
-| **U2** | 1 | LD1117S33TR_SOT223 | Package_TO_SOT_SMD:SOT-223-3_TabPin2 | [LCSC C86781](https://www.lcsc.com/product-detail/C86781.html) |
+** BOM Total: $8.53 USD**
+
+## Parts
+
+| Designator                 | Part                |
+| -------------------------- | ------------------- |
+| C1, C2                     | 33 pF               |
+| C3, C4, C5, C6, C7, C8, C9 | 1 µF                |
+| C10                        | 100 nF              |
+| C39, C40                   | 4.7 µF              |
+| D1, D2                     | WS2812B-2020        |
+| F1                         | Resettable Fuse     |
+| J1                         | USB-C Receptacle    |
+| R1, R2, R3, R4, R5         | 5.1 kΩ              |
+| R6, R7, R8                 | 10 kΩ               |
+| SW1                        | Tactile Push Button |
+| U1                         | ESP32-S2FH4         |
+| U2                         | XC6206P332MR-G      |
+| Y1                         | 25 MHz Crystal      |
+
