@@ -1,11 +1,14 @@
-SNO. ,Quantity,Part Name,Link
-0,2,10uF Capacitor SMD (1206),https://www.lcsc.com/product-detail/C13585.html
-1,1,100nF Capacitor SMD (1206),https://www.lcsc.com/product-detail/C1748.html
-2,3,LED THT (3.0mm),https://www.lcsc.com/product-detail/C72041.html
-3,2,"1x20 Pin Header (Vertical, 2.54mm)",https://www.lcsc.com/product-detail/C2337.html
-4,1,USB-C Receptacle USB 2.0 16-Pin,https://www.lcsc.com/product-detail/C2765186.html
-5,5,5.1kΩ Resistor SMD (1206),https://www.lcsc.com/product-detail/C17936.html
-6,1,51kΩ Resistor SMD (1206),https://www.lcsc.com/product-detail/C17942.html
-7,2,Cherry MX Switch (1.00u PCB Mount),https://stackskb.com/store/cherry-mx-clear-switch-5-pin-pack-of-10/
-8,1,ESP32-S3-WROOM-1,https://www.lcsc.com/product-detail/C2913202.html
-9,1,LD1117S33TR 3.3V LDO Voltage Regulator (SOT-223),https://www.lcsc.com/product-detail/C86781.html
+SNO.,Quantity,Part Name,Link
+0,2,33pF Capacitor SMD (0402),https://www.lcsc.com/product-detail/C5137486.html
+1,1,100nF Capacitor SMD (0402),https://www.lcsc.com/product-detail/C1525.html
+2,7,1uF Capacitor SMD (0402),https://www.lcsc.com/product-detail/C52923.html
+3,2,4.7uF Capacitor SMD (0402),https://www.lcsc.com/product-detail/C23733.html
+4,2,WS2812B-2020 Addressable RGB LED,https://www.lcsc.com/product-detail/C5349955.html
+5,1,12V 1A Resettable Fuse SMD (0805),https://www.lcsc.com/product-detail/C46640991.html
+6,1,USB-C Receptacle USB 2.0 16-Pin,https://www.lcsc.com/product-detail/C393939.html
+7,5,5.1kΩ Resistor SMD (0402),https://www.lcsc.com/product-detail/C25905.html
+8,3,10kΩ Resistor SMD (0402),https://www.lcsc.com/product-detail/C25744.html
+9,1,TS-1088-AR02016 Tactile Switch,https://www.lcsc.com/product-detail/C720477.html
+10,1,ESP32-S2FH4,https://www.lcsc.com/product-detail/C2840995.html
+11,1,XC6206P332MR-G 3.3V LDO Voltage Regulator (SOT-23-3),https://www.lcsc.com/product-detail/C5446.html
+12,1,25MHz 20pF Crystal SMD (2016),https://www.lcsc.com/product-detail/C252274.html
