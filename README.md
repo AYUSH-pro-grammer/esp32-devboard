@@ -17,7 +17,7 @@ This project was created as a means to learn how to design hardware PCBs. Instea
 ### Schematics & Routing
 ![Schematic](image/schamtic.png)
 ![PCB Routing](image/pcb_routing.png)
-![PCB Routing with Silkscreen](image/pcb_routing_silkscreen.png)
+
 
 
 #### Components Summary
