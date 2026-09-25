@@ -4522,16 +4522,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 62.23) (xy 124.46 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1314680c-c23d-4b45-abfa-fe891eccad7e")
-	)
-	(wire
-		(pts
 			(xy 30.48 152.4) (xy 17.78 152.4)
 		)
 		(stroke
@@ -4599,16 +4589,6 @@
 			(type default)
 		)
 		(uuid "1f35a00f-9e97-40fc-bad4-86f6c2927daf")
-	)
-	(wire
-		(pts
-			(xy 137.16 57.15) (xy 124.46 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2014850f-da55-4bef-9e18-a47de85598a1")
 	)
 	(wire
 		(pts
@@ -6000,7 +5980,7 @@
 		)
 		(uuid "3127cf41-a742-43de-8556-9f004012df92")
 	)
-	(label "GPIO4"
+	(label "SWCLK"
 		(at 124.46 54.61 0)
 		(effects
 			(font
@@ -6039,16 +6019,6 @@
 			(justify left bottom)
 		)
 		(uuid "3912e6a1-745b-46fb-849a-78b44fdf05d8")
-	)
-	(label "GPIO7"
-		(at 124.46 62.23 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3d06f8ce-3fc2-4916-b0dc-7317a0212e2c")
 	)
 	(label "CHIP_PU"
 		(at 186.69 100.33 0)
@@ -6120,7 +6090,7 @@
 		)
 		(uuid "60d51f10-83d7-4ebe-83af-ea20c2d2036b")
 	)
-	(label "GPIO6"
+	(label "SWIO"
 		(at 124.46 59.69 0)
 		(effects
 			(font
@@ -6140,7 +6110,7 @@
 		)
 		(uuid "641c8be6-370c-4f5d-80b5-e469a710455e")
 	)
-	(label "GPIO8"
+	(label "SWPUC"
 		(at 124.46 64.77 0)
 		(effects
 			(font
@@ -6280,7 +6250,7 @@
 		)
 		(uuid "a451e790-3a93-4447-826b-d8d28f044245")
 	)
-	(label "GPIO9"
+	(label "SWPUD"
 		(at 124.46 67.31 0)
 		(effects
 			(font
@@ -6499,16 +6469,6 @@
 			(justify left bottom)
 		)
 		(uuid "f98f70be-faca-4d4e-a7ec-5aa3e7f97d93")
-	)
-	(label "GPIO5"
-		(at 124.46 57.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fb772b7e-b58e-4657-8cda-f1df086d60c6")
 	)
 	(symbol
 		(lib_id "Regulator_Linear:XC6206PxxxMR")
